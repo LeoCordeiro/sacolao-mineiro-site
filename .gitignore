@@ -1,0 +1,5 @@
+PENDENCIAS.md
+*.zip
+.netlify/
+.DS_Store
+Thumbs.db
