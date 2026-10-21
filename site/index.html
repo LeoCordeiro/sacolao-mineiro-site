@@ -160,6 +160,74 @@ PLAu:10
 img.sm-lottie-alvo{visibility:hidden}
 .sm-aceno{position:fixed;width:112px;height:120px;z-index:999999998;pointer-events:none;line-height:0}
 @media (prefers-reduced-motion:reduce){html.avia_transform .avia_animated_image.avia_start_delayed_animation.fade-in{animation:none}}</style>
+<style id="sacolao-mobile">
+/* Botões flutuantes e menu de tela cheia (todas as larguras) */
+.sm-hero-celular{display:none}
+#wa{transition:opacity .2s ease,visibility .2s ease}
+#wa.sm-wa-recolhido,#scroll-top-link.sm-topo-recolhido{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
+#scroll-top-link{right:76px!important;bottom:16px!important}  /* à esquerda do WhatsApp: em cima dele ocuparia o espaço do balão */
+body.sm-wa-oculto .sm-aceno{visibility:hidden!important}
+html.av-burger-overlay-active .cky-consent-container,html.av-burger-overlay-active #wa,html.av-burger-overlay-active .sm-aceno{visibility:hidden!important;pointer-events:none!important}
+@media (max-width:1023px){
+  /* Celular e tablet (menu de toque): alvos de 44 px e rodapé legível */
+  #footer #text-3 .textwidget a{display:inline-flex;align-items:center;min-height:44px;max-width:100%;overflow-wrap:anywhere}
+  .social_bookmarks li{width:44px!important;height:44px!important}
+  .social_bookmarks li a{width:44px!important;height:44px!important;line-height:44px!important}
+  #header .social_bookmarks{height:44px!important;overflow:visible!important;margin-top:-7px}
+  #layer_slider_1 .ls-layer-link::after{content:"";position:absolute;left:-4px;right:-4px;top:-6px;bottom:-6px}
+  #header .av-burger-menu-main.av-small-burger-icon{transform:none!important;width:44px!important}
+  #header .av-burger-menu-main>a{width:44px!important;padding:0!important;display:flex!important;justify-content:center;align-items:center}
+  #header .av-burger-menu-main .av-hamburger{transform:scale(.6);transform-origin:center}
+  #av-burger-menu-ul a{font-size:17px!important}
+  .cky-notice-des a.cky-policy{display:inline-block;padding:12px 0;margin:-12px 0}
+  #av-layout-grid-1 .iconbox_content_container,#av-layout-grid-1 .iconbox_content_container p{text-align:left!important}
+  #socket .container{display:flex!important;flex-direction:column;align-items:center;gap:6px;padding-top:16px!important;padding-bottom:88px!important;text-align:center}
+  #socket .social_bookmarks{order:1;float:none!important;margin:0!important}
+  #socket .sub_menu_socket{order:2;float:none!important;width:100%}
+  #socket .sub_menu_socket .menu{display:flex!important;flex-wrap:wrap;justify-content:center;float:none!important}
+  #socket .sub_menu_socket li{float:none!important;border:0!important;margin:0!important;padding:0!important}
+  #socket .sub_menu_socket li a{display:inline-flex!important;align-items:center;min-height:44px;padding:0 10px!important;font-size:13.5px!important}
+  #socket .copyright{order:3;float:none!important;font-size:12.5px;line-height:1.6}
+  #socket .copyright a{display:inline-block;padding:14px 4px;margin:-14px -4px}
+}
+@media (min-width:768px) and (max-width:989px){
+  /* tablet: o tema centraliza o ícone com top:50% e margem de meia altura; com 44 px, a margem é -22 px */
+  .responsive.html_mobile_menu_tablet #top .av-logo-container .main_menu .social_bookmarks{margin-top:-22px!important}
+}
+@media (max-width:767px){
+  /* Celular: faixa do hero no lugar das camadas do slider, passos em lista e rodapé compacto */
+  #layer_slider_1 .ls-text-layer,#layer_slider_1 .ls-layer-link{visibility:hidden!important}
+  .sm-hero-celular{display:flex;flex-direction:column;align-items:center;gap:12px;padding:18px 16px 22px;background:#fff;text-align:center}
+  .sm-hero-celular .sm-hero-rotulo{margin:0;padding:9px 16px;background:#f06b23;color:#fff;font-weight:600;font-size:clamp(16px,5vw,19px);line-height:1.2;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+  .sm-hero-celular .sm-hero-texto{margin:0;max-width:330px;color:#333;font-size:15px;line-height:1.5}
+  .sm-hero-celular .sm-hero-botao{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 30px;background:#55af35;color:#fff!important;font-weight:400;font-size:15px;letter-spacing:.03em;text-transform:uppercase;text-decoration:none;border-radius:3px}
+
+  #av-layout-grid-1 .flex_cell{padding:26px 20px!important}
+  #av-layout-grid-1 .iconbox_content_container,#av-layout-grid-1 .iconbox_content_container p{font-size:15px!important;line-height:1.55!important}
+
+  .responsive #top #wrap_all #main .avia-section .content{padding-top:34px!important;padding-bottom:34px!important}
+  .responsive #top #wrap_all #main .avia-section .entry-content-wrapper>.hr:last-child{display:none!important}
+
+  .responsive #top #wrap_all #av_section_2 .flex_column.av_one_third,
+  .responsive #top #wrap_all #av_section_3 .flex_column.av_one_third{display:flex!important;align-items:center;gap:16px;margin-bottom:16px!important;text-align:left}
+  #av_section_2 .av_one_third .avia-image-container,#av_section_3 .av_one_third .avia-image-container{flex:0 0 76px;width:76px!important;margin:0!important}
+  #av_section_2 .av_one_third .avia-image-container img,#av_section_3 .av_one_third .avia-image-container img{width:76px!important;height:76px!important}
+  #av_section_2 .av_one_third .av-special-heading,#av_section_3 .av_one_third .av-special-heading{flex:1 1 auto;margin:0!important;padding:0!important;text-align:left!important}
+  #av_section_2 .av_one_third .av-special-heading-tag,#av_section_3 .av_one_third .av-special-heading-tag{font-size:19px!important;text-align:left!important;margin:0!important;padding:0!important}
+  #av_section_2 .av_one_third .av-subheading,#av_section_3 .av_one_third .av-subheading{text-align:left!important;font-size:15px!important;margin-top:2px!important}
+  #av_section_2 .av_one_third .special-heading-border,#av_section_3 .av_one_third .special-heading-border{display:none!important}
+
+  #footer .widget{margin-top:0!important;margin-bottom:0!important}
+  .responsive #top #wrap_all #footer{padding-top:34px!important}
+  .responsive #top #wrap_all #footer .flex_column{margin-bottom:28px!important}
+  #footer .seperator{display:none!important}
+  #footer .textwidget{font-size:14.5px}
+
+  body:has(.cky-consent-container:not(.cky-hide)) #wa,body:has(.cky-consent-container:not(.cky-hide)) .sm-aceno{opacity:0;visibility:hidden;pointer-events:none}
+  .cky-consent-container .cky-consent-bar{padding:16px!important}
+  .cky-consent-container .cky-notice-des,.cky-consent-container .cky-notice-des p{font-size:13.5px!important;line-height:1.5!important;text-align:left!important}
+}
+</style>
 </head>
 
 <body data-rsssl=1 id="top" class="home wp-singular page-template-default page page-id-734 wp-theme-neweb stretched rtl_columns av-curtain-numeric open_sans  post-type-page avia-responsive-images-support av-recaptcha-enabled av-google-badge-hide" itemscope="itemscope" itemtype="https://schema.org/WebPage" >
@@ -204,7 +272,8 @@ img.sm-lottie-alvo{visibility:hidden}
 
 	<div id='main' class='all_colors' data-scroll-offset='116'>
 
-	<div id='layer_slider_1'  class='avia-layerslider main_color avia-shadow  avia-builder-el-0  el_before_av_layout_row  avia-builder-el-first  container_wrap fullsize'  style='height: 451px; max-width: 1200px; margin: 0 auto;'  ><div id="layerslider_1_zcujs7y1s4c0"  class="ls-wp-container fitvidsignore ls-selectable" style="width:1200px;height:450px;margin:0 auto;"><div class="ls-slide" data-ls="duration:7000;transition2d:1;parallaxevent:scroll;parallaxaxis:none;"><img decoding="async" width="1600" height="470" src="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/bg-mercado.jpg" class="ls-bg" alt="" srcset="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/bg-mercado.jpg 1600w, wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/bg-mercado-1500x441.jpg 1500w" sizes="(max-width: 1600px) 100vw, 1600px" /><img decoding="async" width="1200" height="533" src="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/mercado.png" class="ls-l ls-img-layer" alt="" srcset="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/mercado.png 1200w" sizes="(max-width: 1200px) 100vw, 1200px" style="top:245px;left:-30px;width:731px;height:274px;" data-ls="offsetxin:left;durationin:1500;delayin:600;easingin:easeOutQuint;offsetxout:left;slidedirection:right;slideoutdirection:left;delayout:800;"><h1 style="font-size:30px;text-align:center;background-position:50% 50%;overflow:visible;top:102px;left:700px;line-height:80px;color:#ffffff;font-family:Impact;font-weight:200;background-color:#f06a23;background-size:auto;width:400px;white-space:normal;" class="ls-l ls-text-layer" data-ls="offsetxin:right;durationin:1500;delayin:600;easingin:easeOutQuint;position:fixedx;">MERCEARIA</h1><a style="" class="ls-l" href="https://api.whatsapp.com/send?phone=5511973162160&amp;text=%5BCESTA%5D%20Ol%C3%A1%21%20Quero%20pedir%20minha%20cesta.%0ANome%3A%0ABairro%3A%0AUnidade%20preferida%20%281%20ou%202%29%3A%0ARetirada%20ou%20entrega%3A%0ATipo%20de%20cesta%3A%0AObserva%C3%A7%C3%B5es%3A" target="_blank" data-ls="offsetxin:right;durationin:1500;delayin:600;easingin:easeOutQuint;position:fixedx;"><h1 style="font-size:25px;text-align:center;background-position:50% 50%;overflow:visible;top:209px;left:793px;line-height:53px;color:#ffffff;font-family:Impact;background-size:auto;width:200px;font-weight:200;background-color:#55af35;white-space:normal;" class="ls-text-layer">Fazer pedido</h1></a></div><div class="ls-slide" data-ls="duration:7000;transition2d:1;"><img decoding="async" width="1600" height="470" src="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/fundo-hortifruti.jpg" class="ls-bg" alt="" srcset="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/fundo-hortifruti.jpg 1600w, wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/fundo-hortifruti-1500x441.jpg 1500w" sizes="(max-width: 1600px) 100vw, 1600px" /><img decoding="async" width="933" height="1000" src="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/Legumes-verduras.png" class="ls-l ls-img-layer" alt="" srcset="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/Legumes-verduras.png 933w" sizes="(max-width: 933px) 100vw, 933px" style="top:24px;left:762px;width:438px;height:465px;" data-ls="offsetxin:right;durationin:1500;delayin:200;easingin:easeOutQuint;offsetxout:left;durationout:1400;slidedirection:right;slideoutdirection:left;delayout:1400;"><img decoding="async" width="290" height="237" src="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/hf.png" class="ls-l ls-img-layer" alt="" style="top:174px;left:548px;width:385px;height:315px;" data-ls="offsetxin:right;durationin:1500;delayin:600;easingin:easeOutQuint;offsetxout:left;slidedirection:right;slideoutdirection:left;delayout:800;"><h1 style="font-size:30px;text-align:center;background-position:50% 50%;overflow:visible;top:70px;left:52px;line-height:80px;color:#ffffff;font-family:Impact;font-weight:200;background-color:#f06a23;background-size:auto;width:400px;white-space:normal;" class="ls-l ls-text-layer" data-ls="offsetxin:left;durationin:1500;delayin:600;easingin:easeOutQuint;position:fixedx;">HORTIFRUTI</h1><a style="" class="ls-l" href="https://api.whatsapp.com/send?phone=5511973162160&amp;text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Sacol%C3%A3o%20do%20Mineiro." target="_blank" data-ls="offsetxin:left;durationin:1500;delayin:600;easingin:easeOutQuint;static:2;position:fixedx;"><h1 style="font-size:25px;text-align:center;background-position:50% 50%;overflow:visible;top:181px;left:143px;line-height:53px;color:#ffffff;font-family:Impact;background-size:auto;width:200px;font-weight:200;background-color:#55af35;white-space:normal;" class="ls-text-layer">Fazer pedido</h1></a></div></div></div>
+	<div class="sm-hero-celular"><p class="sm-hero-rotulo">Hortifruti&nbsp;·&nbsp;Mercearia</p><p class="sm-hero-texto">Duas unidades em Ribeirão Pires, com entrega em Ouro Fino, Palmeiras e região.</p><a class="sm-hero-botao" href="https://api.whatsapp.com/send?phone=5511973162160&amp;text=%5BCESTA%5D%20Ol%C3%A1%21%20Quero%20pedir%20minha%20cesta.%0ANome%3A%0ABairro%3A%0AUnidade%20preferida%20%281%20ou%202%29%3A%0ARetirada%20ou%20entrega%3A%0ATipo%20de%20cesta%3A%0AObserva%C3%A7%C3%B5es%3A">Fazer pedido</a></div>
+<div id='layer_slider_1'  class='avia-layerslider main_color avia-shadow  avia-builder-el-0  el_before_av_layout_row  avia-builder-el-first  container_wrap fullsize'  style='height: 451px; max-width: 1200px; margin: 0 auto;'  ><div id="layerslider_1_zcujs7y1s4c0"  class="ls-wp-container fitvidsignore ls-selectable" style="width:1200px;height:450px;margin:0 auto;"><div class="ls-slide" data-ls="duration:7000;transition2d:1;parallaxevent:scroll;parallaxaxis:none;"><img decoding="async" width="1600" height="470" src="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/bg-mercado.jpg" class="ls-bg" alt="" srcset="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/bg-mercado.jpg 1600w, wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/bg-mercado-1500x441.jpg 1500w" sizes="(max-width: 1600px) 100vw, 1600px" /><img decoding="async" width="1200" height="533" src="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/mercado.png" class="ls-l ls-img-layer" alt="" srcset="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/mercado.png 1200w" sizes="(max-width: 1200px) 100vw, 1200px" style="top:245px;left:-30px;width:731px;height:274px;" data-ls="offsetxin:left;durationin:1500;delayin:600;easingin:easeOutQuint;offsetxout:left;slidedirection:right;slideoutdirection:left;delayout:800;"><h1 style="font-size:30px;text-align:center;background-position:50% 50%;overflow:visible;top:102px;left:700px;line-height:80px;color:#ffffff;font-family:Impact;font-weight:200;background-color:#f06a23;background-size:auto;width:400px;white-space:normal;" class="ls-l ls-text-layer" data-ls="offsetxin:right;durationin:1500;delayin:600;easingin:easeOutQuint;position:fixedx;">MERCEARIA</h1><a style="" class="ls-l" href="https://api.whatsapp.com/send?phone=5511973162160&amp;text=%5BCESTA%5D%20Ol%C3%A1%21%20Quero%20pedir%20minha%20cesta.%0ANome%3A%0ABairro%3A%0AUnidade%20preferida%20%281%20ou%202%29%3A%0ARetirada%20ou%20entrega%3A%0ATipo%20de%20cesta%3A%0AObserva%C3%A7%C3%B5es%3A" target="_blank" data-ls="offsetxin:right;durationin:1500;delayin:600;easingin:easeOutQuint;position:fixedx;"><h1 style="font-size:25px;text-align:center;background-position:50% 50%;overflow:visible;top:209px;left:793px;line-height:53px;color:#ffffff;font-family:Impact;background-size:auto;width:200px;font-weight:200;background-color:#55af35;white-space:normal;" class="ls-text-layer">Fazer pedido</h1></a></div><div class="ls-slide" data-ls="duration:7000;transition2d:1;"><img decoding="async" width="1600" height="470" src="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/fundo-hortifruti.jpg" class="ls-bg" alt="" srcset="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/fundo-hortifruti.jpg 1600w, wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/fundo-hortifruti-1500x441.jpg 1500w" sizes="(max-width: 1600px) 100vw, 1600px" /><img decoding="async" width="933" height="1000" src="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/Legumes-verduras.png" class="ls-l ls-img-layer" alt="" srcset="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/Legumes-verduras.png 933w" sizes="(max-width: 933px) 100vw, 933px" style="top:24px;left:762px;width:438px;height:465px;" data-ls="offsetxin:right;durationin:1500;delayin:200;easingin:easeOutQuint;offsetxout:left;durationout:1400;slidedirection:right;slideoutdirection:left;delayout:1400;"><img decoding="async" width="290" height="237" src="wp-content/uploads/layerslider/projects/Enfold-most-beautiful-theme-ever/hf.png" class="ls-l ls-img-layer" alt="" style="top:174px;left:548px;width:385px;height:315px;" data-ls="offsetxin:right;durationin:1500;delayin:600;easingin:easeOutQuint;offsetxout:left;slidedirection:right;slideoutdirection:left;delayout:800;"><h1 style="font-size:30px;text-align:center;background-position:50% 50%;overflow:visible;top:70px;left:52px;line-height:80px;color:#ffffff;font-family:Impact;font-weight:200;background-color:#f06a23;background-size:auto;width:400px;white-space:normal;" class="ls-l ls-text-layer" data-ls="offsetxin:left;durationin:1500;delayin:600;easingin:easeOutQuint;position:fixedx;">HORTIFRUTI</h1><a style="" class="ls-l" href="https://api.whatsapp.com/send?phone=5511973162160&amp;text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Sacol%C3%A3o%20do%20Mineiro." target="_blank" data-ls="offsetxin:left;durationin:1500;delayin:600;easingin:easeOutQuint;static:2;position:fixedx;"><h1 style="font-size:25px;text-align:center;background-position:50% 50%;overflow:visible;top:181px;left:143px;line-height:53px;color:#ffffff;font-family:Impact;background-size:auto;width:200px;font-weight:200;background-color:#55af35;white-space:normal;" class="ls-text-layer">Fazer pedido</h1></a></div></div></div>
 <div id='av-layout-grid-1'  class='av-layout-grid-container av-s194m-0c0e82b734b0a8d1255005c331b31204 entry-content-wrapper main_color av-flex-cells  avia-builder-el-1  el_after_av_layerslider  el_before_av_section  grid-row-not-first  container_wrap fullsize'  >
 <div class='flex_cell av-l3lh2-a3f2ad982507dd5080715a4d22d43cad av-gridrow-cell av_one_third no_margin  avia-builder-el-2  el_before_av_cell_one_third  avia-builder-el-first  content-align-middle'  ><div class='flex_cell_inner'>
 <article  class='iconbox iconbox_left_content av-comu6-c7cb4c925eddcd7d14f28e9f481a5e1f  avia-builder-el-3  avia-builder-el-no-sibling '  itemscope="itemscope" itemtype="https://schema.org/CreativeWork" ><div class='iconbox_icon heading-color avia-iconfont avia-font-entypo-fontello' data-av_icon='' data-av_iconfont='entypo-fontello'  ></div><div class="iconbox_content"><header class="entry-content-header" aria-label="Icon: SELEÇÃO DIÁRIA"><h3 class='iconbox_content_title '  itemprop="headline" >SELEÇÃO DIÁRIA</h3></header><div class='iconbox_content_container av_inherit_color'  itemprop="text" ><p style="text-align: justify;">Frutas, verduras e legumes escolhidos todo dia, com cuidado na seleção e no manuseio.</p>
@@ -261,7 +330,7 @@ img.sm-lottie-alvo{visibility:hidden}
 		<span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_third  el_after_av_one_third el_before_av_one_third '><section id="text-2" class="widget clearfix widget_text"><h3 class="widgettitle">Horário de Atendimento</h3>			<div class="textwidget"><p style="text-align: justify;"><img decoding="async" class="size-full wp-image-3614 alignleft" src="wp-content/uploads/sacolao-do-mineiro/sacolao-do-mineiro-selo-laranja.png" alt="Sacolão do Mineiro" width="100" height="100"><strong>Unidade 1</strong><br />Consulte pelo WhatsApp</p>
 <p><strong>Unidade 2</strong><br />Consulte pelo WhatsApp</p>
 </div>
-		<span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_third  el_after_av_one_third el_before_av_one_third '><section id="text-3" class="widget clearfix widget_text"><h3 class="widgettitle">Contatos</h3>			<div class="textwidget"><p><strong>WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=5511973162160&amp;text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Sacol%C3%A3o%20do%20Mineiro.">(11) 97316-2160</a><br /><strong>E-mail:</strong> <a href="mailto:contato@sacolaodomineiro.com.br">contato@sacolaodomineiro.com.br</a><br /><strong>Entrega:</strong> Ouro Fino, Palmeiras e região<br /><strong>Reclame Aqui:</strong> <a href="https://www.reclameaqui.com.br/empresa/sacolaomineiro/" target="_blank" rel="noopener">sacolaomineiro</a></p>
+		<span class="seperator extralight-border"></span></section></div><div class='flex_column av_one_third  el_after_av_one_third el_before_av_one_third '><section id="text-3" class="widget clearfix widget_text"><h3 class="widgettitle">Contatos</h3>			<div class="textwidget"><p><strong>WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=5511973162160&amp;text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Sacol%C3%A3o%20do%20Mineiro.">(11) 97316-2160</a><br /><strong>E-mail:</strong> <a href="mailto:contato@sacolaodomineiro.com.br">contato@<wbr>sacolaodomineiro.com.br</a><br /><strong>Entrega:</strong> Ouro Fino, Palmeiras e região<br /><strong>Reclame Aqui:</strong> <a href="https://www.reclameaqui.com.br/empresa/sacolaomineiro/" target="_blank" rel="noopener">sacolaomineiro</a></p>
 </div>
 		<span class="seperator extralight-border"></span></section></div>
 					</div>
@@ -418,7 +487,47 @@ var AviaReCAPTCHA_front = {"version":"avia_recaptcha_v2","site_key2":"","site_ke
 				})();
 
 			</script>
-			<script id="sm-lottie-js" src="wp-content/uploads/sacolao-do-mineiro/lottie/sm-lottie.js" defer></script></body>
+			<script id="sm-lottie-js" src="wp-content/uploads/sacolao-do-mineiro/lottie/sm-lottie.js" defer></script><script id="sacolao-mobile-js">
+/* Botões flutuantes (WhatsApp e voltar ao topo) somem enquanto cobririam um botão ou link da página e voltam quando ele sai de baixo. */
+(function () {
+  var ALVOS = 'a[href], button, [role=button], input, select, textarea, summary';
+  var wa = document.getElementById('wa');
+  var flutuantes = [
+    { el: wa, caixa: '.wa__btn_popup', classe: 'sm-wa-recolhido' },  // o plugin cria o botão depois: buscar a cada checagem
+    { el: document.getElementById('scroll-top-link'), classe: 'sm-topo-recolhido' }
+  ].filter(function (f) { return f.el; });
+  if (!flutuantes.length) return;
+  function fixo(e) {
+    for (var p = e; p && p !== document.body; p = p.parentElement) if (getComputedStyle(p).position === 'fixed') return true;
+    return false;
+  }
+  function cobre() {
+    var els = document.querySelectorAll(ALVOS);
+    flutuantes.forEach(function (f) {
+      var r = ((f.caixa && f.el.querySelector(f.caixa)) || f.el).getBoundingClientRect(), tapa = false;
+      for (var i = 0; r.width && i < els.length && !tapa; i++) {
+        var e = els[i];
+        if (f.el.contains(e) || e.closest('.cky-consent-container')) continue;
+        var q = e.getBoundingClientRect();
+        if (!q.width || !q.height || q.right <= r.left + 4 || q.left >= r.right - 4 || q.bottom <= r.top + 4 || q.top >= r.bottom - 4) continue;
+        var cs = getComputedStyle(e);
+        tapa = cs.visibility !== 'hidden' && cs.display !== 'none' && !fixo(e);  // opacidade não conta: o controle pode estar no fade de entrada
+      }
+      f.el.classList.toggle(f.classe, tapa);
+    });
+    if (wa) document.body.classList.toggle('sm-wa-oculto', wa.classList.contains('sm-wa-recolhido'));
+  }
+  var pedido = 0;
+  function agenda() { cancelAnimationFrame(pedido); pedido = requestAnimationFrame(cobre); }
+  addEventListener('scroll', agenda, { passive: true });
+  addEventListener('resize', agenda);
+  addEventListener('load', agenda);
+  document.addEventListener('animationend', agenda, true);
+  document.addEventListener('transitionend', agenda, true);
+  setInterval(cobre, 1500);
+})();
+</script>
+</body>
 </html>
 
 

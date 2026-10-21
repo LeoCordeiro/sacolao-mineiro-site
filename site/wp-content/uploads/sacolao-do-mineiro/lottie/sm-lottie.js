@@ -162,6 +162,9 @@
     var botao = document.querySelector('#wa .wa__btn_popup');
     var icone = botao && botao.querySelector('.wa__btn_popup_icon');
     if (!icone || botao.classList.contains('wa__active')) return;
+    // botão escondido (aviso de cookies, menu aberto ou cobrindo um controle): sem balão e sem gastar o "uma vez"
+    var wa = document.getElementById('wa'), cw = getComputedStyle(wa);
+    if (wa.classList.contains('sm-wa-recolhido') || cw.visibility === 'hidden' || +cw.opacity === 0) return;
     var r = icone.getBoundingClientRect();
     if (!r.width) return;
     // caixa do Lottie 112×120; o balão (4..108 × 4..70) fica acima do botão e o rabo desce até a ponta (84, 116),
